@@ -1,5 +1,36 @@
 # statistical-simulation-blackjack-card-counting-strategies
 
+### Mathematical Analysis of Card Counting
+
+The **Hi-Lo system** assigns values to cards:
+- **High cards (10, J, Q, K, A)** → **-1**
+- **Mid-value cards (7, 8, 9)** → **0**
+- **Low cards (2, 3, 4, 5, 6)** → **+1**
+
+#### Running Count ($RC$) and True Count ($TC$):
+The running count updates dynamically as cards are drawn:
+$$ RC = \sum \text{Card Values Seen} $$
+
+The **True Count** adjusts for the number of decks remaining:
+$$ TC = \frac{RC}{	ext{Decks Remaining}} $$
+
+#### Statistical Expected Value Calculation:
+For each round, the **expected value (EV)** of a bet is calculated:
+$$ EV = \sum_{i} P_i \cdot W_i $$
+Where:
+- $P_i$ is the probability of outcome $i$
+- $W_i$ is the associated win/loss amount
+
+When the **True Count is positive**, the expected value increases, indicating an advantage. The **Kelly Criterion** helps determine bet sizing:
+$$ f^* = \frac{p(b+1) - 1}{b} $$
+Where:
+- $p$ is the probability of winning
+- $b$ is the net fractional odds of winning
+- $f^*$ is the optimal fraction of bankroll to bet
+
+### Monte Carlo Simulation
+Monte Carlo methods simulate thousands of hands to statistically evaluate bankroll growth, variance, and the probability of long-term profitability.
+
 ## Project Overview
 
 This project is a statistical simulation analyzing the effectiveness of the **Hi-Lo Card Counting Strategy** in Blackjack. The simulation uses **Monte Carlo methods** to estimate the long-term effects of card counting on bankroll growth and win rates.
