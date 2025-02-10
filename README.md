@@ -9,20 +9,20 @@ The **Hi-Lo system** assigns values to cards:
 
 #### Running Count ($RC$) and True Count ($TC$):
 The running count updates dynamically as cards are drawn:
-$$ RC = \sum \text{Card Values Seen} $$
+$$RC = \sum \text{Card Values Seen}$$
 
 The **True Count** adjusts for the number of decks remaining:
-$$ TC = \frac{RC}{	ext{Decks Remaining}} $$
+$$TC = \frac{RC}{	ext{Decks Remaining}}$$
 
 #### Statistical Expected Value Calculation:
 For each round, the **expected value (EV)** of a bet is calculated:
-$$ EV = \sum_{i} P_i \cdot W_i $$
+$$EV = \sum_{i} P_i \cdot W_i$$
 Where:
 - $P_i$ is the probability of outcome $i$
 - $W_i$ is the associated win/loss amount
 
 When the **True Count is positive**, the expected value increases, indicating an advantage. The **Kelly Criterion** helps determine bet sizing:
-$$ f^* = \frac{p(b+1) - 1}{b} $$
+$$f^* = \frac{p(b+1) - 1}{b}$$
 Where:
 - $p$ is the probability of winning
 - $b$ is the net fractional odds of winning
