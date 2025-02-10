@@ -1,5 +1,9 @@
 # statistical-simulation-blackjack-card-counting-strategies
 
+## Project Overview
+
+This project is a statistical simulation analyzing the effectiveness of the **Hi-Lo Card Counting Strategy** in Blackjack. The simulation uses **Monte Carlo methods** to estimate the long-term effects of card counting on bankroll growth and win rates.
+
 ### Mathematical Analysis of Card Counting
 
 The **Hi-Lo system** assigns values to cards:
@@ -30,10 +34,6 @@ Where:
 
 ### Monte Carlo Simulation
 Monte Carlo methods simulate thousands of hands to statistically evaluate bankroll growth, variance, and the probability of long-term profitability.
-
-## Project Overview
-
-This project is a statistical simulation analyzing the effectiveness of the **Hi-Lo Card Counting Strategy** in Blackjack. The simulation uses **Monte Carlo methods** to estimate the long-term effects of card counting on bankroll growth and win rates.
 
 ## Folder Structure
 ```
@@ -73,6 +73,5 @@ This will display graphs showing bankroll trends and card counting effectiveness
 
 ## Requirements
 - Python 3.8+
-- NumPy
 - Pandas
 - Matplotlib
